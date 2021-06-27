@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+.clock-box {
+    width: 100%;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    top: 50px;
+}
+
+.showing {
+    display:initial;
+}
+
+.noshowing {
+    display:none;
+}
+
+.submit-box {
+    position: relative;
+    text-align: center;
+    top:200px;
+    font-size: 50px;
+}
+input {
+    text-align: center;
+    width: 400px;
+    border-style:none;
+}
+.name {
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-size: 50px;
+}
+.todoForm {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 350px;
+    background:transparent;
+
+}
+.todolists {
+    list-style:none;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 400px;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.weather {
+    position: absolute;
+    width: 100%;
+    top: 155px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+

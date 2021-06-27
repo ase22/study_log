@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title2 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">I have a apple.</h1>
+    <script>
+        const title = document.querySelector('#title');
+        function resizes(event) {
+            console.log(event);
+        }
+        window.addEventListener('resize', resizes);
+    </script>
+    <h1 id="title2">I ate an apple.</h1>
+    <script>
+        const BASE_COLOR = 'black';
+        const AFTER_COLOR = 'blue';
+
+        const title2 = document.querySelector('#title2');
+
+        function changeColor() {
+            if (title2.style.color == BASE_COLOR) {
+                title2.style.color = AFTER_COLOR;
+            } else {
+                title2.style.color = BASE_COLOR;
+            }
+        }
+        function init() {
+            title2.style.color = BASE_COLOR;
+            title2.addEventListener('click',changeColor);
+        }
+        init();
+        </script>
+</body>
+
+</html>

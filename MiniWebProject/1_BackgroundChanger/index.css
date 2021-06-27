@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+.bg {
+    background-color: #3474FF;
+    width: auto;
+    height: 538px;
+}
+.main {
+    position: relative;
+    top: 189.5px;
+    text-align: center;
+    
+}
+.hexcolor {
+    font-size: 80px;
+    font-weight:normal;
+    opacity: 0.8;
+}
+input {
+    font-size: 20px;
+    color: white;
+    background-color: #6C757D;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #595d61;
+}

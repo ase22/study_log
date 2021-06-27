@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colored {
+            color: violet;
+            transition: color 0.5s ease-in-out;
+        }
+        .btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="colored btn">This color has been changing.</h1>
+    <script>
+        const title = document.querySelector('#title');
+        const CLICKED_CLASS = 'colored';
+        // 문장 클릭을 하면 클릭한거 인지해서 클래스 빼야함
+        function changeClass() {
+            // if (title.classList.contains(CLICKED_CLASS)) {
+            //     title.classList.remove(CLICKED_CLASS);
+            // } else {
+            //     title.classList.add(CLICKED_CLASS);
+            // }
+            title.classList.toggle(CLICKED_CLASS);
+        }
+
+        title.addEventListener('click',changeClass); //이렇게 할수도 있지만 이걸 포함하는 함수를 실행하는 코드를 짤 수도 있다.
+    </script>
+</body>
+</html>

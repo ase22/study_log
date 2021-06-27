@@ -1,0 +1,55 @@
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+th {
+  font-weight:bolder;
+  font-size: 20px;
+}
+td {
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+button:active {
+  outline: none;
+  border: none;
+  }
+
+button:focus {outline:0;}
+
+#left-arrow {
+  font-size: 50px;
+}
+
+#right-arrow {
+  font-size: 50px;
+}
+
+.chalender-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.month-year {
+  text-align: center;
+}
+.week-day {
+  text-align: center;
+  font-size: 50px;
+}

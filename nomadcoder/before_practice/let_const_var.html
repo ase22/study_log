@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayhello(name,age) {
+            console.log(`hello ${name} your age is ${age}`);
+            return 'hi';
+        }
+        const greetsomeone = sayhello('honghwee',24);
+        console.log(greetsomeone);
+
+        const calculator = {
+            plus: function(num1,num2) {
+                return num1+num2;
+            },
+            multiples: function(num1,num2) {
+                return num1*num2;
+            },
+            two: function(plus,multiples) {
+                return multiples+plus;
+            },
+            name:'sangeon',
+            age:14,
+            aa: function() {
+                const str = this.name+this.age;
+                return str;
+            }
+        }
+        console.log(calculator.plus(1,2));
+        console.log(calculator.multiples(3,4));
+        const two = calculator.two(calculator.plus(1,2),calculator.multiples(3,4));
+        console.log(two);
+        console.log(calculator.aa());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

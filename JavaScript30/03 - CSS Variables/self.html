@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            border:0;
+            filter:blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Update CSS Variables with <span class="JS">JS</span></h1>
+    <div class="control-box">
+        <span class="spacing">
+            Spacing:
+            <input type="range" value="20" min="0" max="100">
+        </span>
+        <span class="blur">
+            Blur:
+            <input type="range" value="0" min="0" max="20">
+        </span>
+        <span class="base-color">
+            Base color
+            <input type="color" value="#018DED">
+        </span>
+    </div>
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+    <script>
+        const inputs = document.querySelectorAll('.control-box input');
+        const controlBox = document.querySelector('.control-box');
+        const spacing = document.querySelector('.spacing');
+        const spacingInput = spacing.querySelector('input');
+        const baseColor = document.querySelector('.base-color');
+        const basecolorInput = baseColor.querySelector('input');
+        const blur = document.querySelector('.blur');
+        const blurInput = blur.querySelector('input');
+        const img = document.querySelector('img');
+        const JS = document.querySelector('.JS');
+        function setSpacing() {
+            img.style.border=`${spacingInput.value}px solid ${basecolorInput.value}`;
+            img.style.filter = `blur(${blurInput.value}px)`;
+            JS.style.color = `${basecolorInput.value}`;
+        }
+        controlBox.addEventListener('click',setSpacing);
+        inputs.forEach(input => input.addEventListener('mousemove', setSpacing));
+    </script>
+</body>
+</html>

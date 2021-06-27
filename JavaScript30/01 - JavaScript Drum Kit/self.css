@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+
+}
+
+.drumtong {
+    display: flex;
+    /* align-items:; */
+    align-content:space-around;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.key {
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 10px;
+    transition: all .07s ease;
+}
+
+.playing {
+    border: 2px solid brown;
+    transform: scale(1.1);
+}
