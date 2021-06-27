@@ -13,7 +13,7 @@ nomadcoder폴더
   - self_practice폴더 - 최대한 코드를 안보고 작성했습니다.
 
 MiniWebProject폴더 
-  - 네 가지 미니 프로젝트 폴더가 들어있습니다.
+  - 네 가지 미니 프로젝트가 들어있습니다.
 
 JavaScript_koans폴더 
   - koans 퀴즈 풀이가 있습니다.
