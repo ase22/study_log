@@ -2,8 +2,8 @@
 Pre-study for pre-course enrollment
 
 HTML,CSS,Javascript폴더 
-  - 학습하면서 작성한 코드 전부를 모은 스터디 로그입니다.
-
+  - 이론 학습중 작성한 코드를 모은 폴더입니다.
+  
 algotithm폴더 
   - 사전학습 알고리즘 4문제 작성한 코드가 있습니다.
 
