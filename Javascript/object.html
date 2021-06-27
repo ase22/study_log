@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person1 = {
+            name: 'Ahn',
+            age: 25,
+            location:'south'
+        };
+        var person2 = {
+            name: 'Jang',
+            age: 33,
+            location: 'east'
+        };
+        //생성자 함수로 하면
+        function Person(name,age,location) {
+            this.name = name;
+            this.age=age;
+            this.location=location;
+        }
+        var person1 = new Person('Ahn',25,'south');
+        var person2 = new Person('jang',33,'east');
+        document.write(person1.age);
+        document.write(person2.location);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

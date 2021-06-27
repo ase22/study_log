@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1[title~="first"] {
+                color: blue;
+            }
+            h1[title|="second"] {
+                color: pink;
+            }
+            a[href^="httpsL//"] {
+                color: sienna;
+            }
+            a[href$="kr"] {
+                font-size: 200%;
+            }
+            h1[title*="first"] {font-size:300%}
+        </style>
+    </head>
+    <body>
+        <h1 title="heading first">Heading first</h1>
+        <h1 title="heading-first">Heading-first</h1>
+        <h1 title="second">Heading second</h1>
+        <h1 title="second-">Heading second-</h1>
+        <a href="https://www.naver.com">네이버</a><br>
+        <a href="https://www.google.co.kr">구글</a>
+    </body>
+</html>

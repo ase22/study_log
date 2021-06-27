@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:hover {color: orange;} 
+            a:active {color: red;}
+            input[type="text"]:focus {background-color: red;}
+            input[type="radio"]:disabled+span {color: gray; text-decoration: line-through;}
+            input:checked+span {color: red;}
+            p:first-child {font-size: 50%;}
+            p:last-child {font-size: 200%;}
+        </style>
+
+    </head>
+    <body>
+        <a href="https://google.co.kr">구글로 가기 위해 마우스를 대시오.</a><br>
+        <input type="text">
+        <hr>
+        <div>
+            <input type="radio" value="male" name="gender"><span>Male</span><br>
+            <input type="radio" value="female" name="gender"><span>Female</span><br>
+            <input type="radio" value="none" name="gender" disabled><span>None</span><br>
+        </div>
+        <div>
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <p>paragraph 3</p>
+        </div>
+    </body>
+</html>

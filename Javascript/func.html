@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // 인자 개수가 정해지지 않은 함수를 만들자
+       function addnum() {
+           var adds = 0;
+           for(var i=0;i<arguments.length;i++) {
+               adds += arguments[i];
+           }
+           return adds;
+       }
+       document.write(addnum(1,2,3));
+        </script>
+</head>
+            <body>
+
+            </body>
+</html>

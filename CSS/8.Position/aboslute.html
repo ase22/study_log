@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+            .parent {
+                width: 300px;
+                height: 300px;
+                background-color: yellow;
+                border: 1px solid green;
+                margin: 40px;
+                float: left;
+                position: static;
+            }
+            .absolute {
+                position: absolute;
+                width: 300px;
+                top: 10px;
+                left: 10px;
+                height: 300px;
+                background-color: black;
+                text-align: center;
+                line-height: 300px;
+                color: red;
+                font-size: 40px;
+            }
+            .relative {
+                position: relative;
+                top: 50px;
+                left: 50px;
+                background-color: black;
+                text-align: center;
+                line-height: 300px;
+                color: red;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="absolute">absolute box</div>
+        </div>
+        <div class="parent">
+            <div class="relative">relative box</div>
+        </div>
+    </body>
+</html>

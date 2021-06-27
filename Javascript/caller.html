@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function foo(func) {
+            var res = func();
+            return res;
+            
+        }
+        function bar() {
+            return 'caller'+bar.caller;
+        }
+        console.log(foo(bar));
+        console.log(bar());
+        console.dir(foo);
+        obj = {
+            'name' : 'ss',
+        }
+        console.dir(obj);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

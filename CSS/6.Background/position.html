@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            div {
+                background-image: url("http://poiemaweb.com/img/bg/dot.png");
+                background-color: #FFEE99;
+                background-repeat: no-repeat;
+                width: 32vw;
+                height: 200px;
+                margin-bottom: 2vw;
+                float: left;
+            }
+            div:not(:nth-of-type(3n+1)) {
+                margin-left: 2vw;
+            }
+            .example1 {
+                background-position: top;
+            }
+            .example2 {
+                background-position: bottom;
+            }
+            .example3 {
+                background-position: center;
+            }
+            .example4 {
+                background-position: left;
+            }
+            .example5 {
+                background-position: right;
+            }
+            .example6 {
+                background-position: 25% 75%;
+            }
+            .example7 {
+                background-position: 10px 20px;
+            }
+            .example8 {
+                background-image: url("http://poiemaweb.com/img/bg/dot.png"), url("http://poiemaweb.com/img/bg/dot.png");
+                background-position: 0px 0px, center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>default</div>
+        <div class="example1">example1</div>
+        <div class="example2"></div>
+        <div class="example3"></div>
+        <div class="example4"></div>
+        <div class="example5"></div>
+        <div class="example6"></div>
+        <div class="example7"></div>
+        <div class="example8"></div>
+    </body>
+</html>

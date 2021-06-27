@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    *, *:after, *:before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .bg-wrap {
+      min-height: 600px;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: auto;
+    }
+
+    .parallax {
+      background-image: url("http://poiemaweb.com/img/bg/stock-photo-125979219.jpg");
+      background-attachment: fixed;
+    }
+
+    .normal {
+      background-image: url("http://poiemaweb.com/img/bg/stock-photo-155153867.jpg");
+    }
+
+    #page-wrap {
+      width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      box-shadow: 0 0 20px black;
+      font: 15px/2 Georgia, Serif;
+      background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bg-wrap parallax">
+    <div id="page-wrap">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum maxime libero, impedit necessitatibus quas blanditiis tenetur vero aut esse unde ab similique, delectus placeat enim quae expedita excepturi laboriosam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum maxime libero, impedit necessitatibus quas blanditiis tenetur vero aut esse unde ab similique, delectus placeat enim quae expedita excepturi laboriosam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsum maxime libero, impedit necessitatibus quas blanditiis tenetur vero aut esse unde ab similique, delectus placeat enim quae expedita excepturi laboriosam.</p>
+    </div>
+  </div>
+  <div class="bg-wrap normal"></div>
+</body>
+</html>

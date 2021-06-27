@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="http://jsonplaceholder.typicode.com/users" method="get">
+            ID: <input type="text" name="id" value="2"><br>
+            username: <input type="text" name="username" value="Antonette"><br>
+            city: <input type="text" name="address.city" value="Wisokyburgh">
+            <input type="submit" value="Submit" onclick="alert('good')">
+        </form>
+            <hr>
+            <fieldset style="width: 300px; text-align: center;" >
+            <h2>설문조사</h2>
+            <p>1. 좋아하는 운동</p>
+            <input type="checkbox" name="soccer" value="soccer">축구<br>
+            <input type="checkbox" name="horse" value="horse">승마<br>
+            <input type="checkbox" name="boat" value="botat">요트타기
+            <p style="color: green;">2. 좋아하는 색상</p>
+            <input type="color" name="color" value="color"><br>
+            <p>3. 먹고싶은 과일</p>
+            <select name="buy fruit">
+                <option value="melon">Melon</option>
+                <option value="gold-apple" disabled>Gold Apple</option>
+                <option value="Apple">Apple</option>
+            </select><br><br>
+            <input type="button" value="Submit" onclick="alert('Completed!')">
+        </fieldset>
+        </body>
+</html>

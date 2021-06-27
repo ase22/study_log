@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수: '로직'을 재실행 할 수 있도록 하는 것, 코드의 재사용성을 높여준다.
+        function five () {
+            numbering();
+            numbering();
+            numbering();
+            numbering();
+            numbering();
+        }
+        function numbering () {
+            var i = 0;
+            while(i<10) {
+                document.write(String(i));
+                i++;
+                if (i === 10) {
+                    document.write('<br/>')
+                }
+            }
+        }
+        function input (a) {
+            var b = a + 10;
+            return b;
+        }
+
+        var switchh = function (arg1,arg2) {
+            var temp;
+            temp = arg2;
+            arg2 = arg1;
+            arg1 = temp;
+            return document.write(arg1arg2);
+        }
+
+
+        five();
+        document.write(input('si'));
+        switchh(3,'안녕');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var man1 = [25, 'man', 'two hands'];
+        document.write(man1 + '<br>');
+        document.write(man1[2]);
+
+        function array1() {
+            return ['a', 'b', 'c', 'd'];
+        }
+        option1 = array1();
+        for (var i = 0; i < option1.length; i++) {
+            document.write(option1[i].toUpperCase());
+        }
+        var arr = ['hi', 'my', 'name'];
+        arr = arr.concat(['is', 'aan']);
+        document.write(arr + '<br>');
+        arr.unshift('z');
+        document.write(arr);
+        arr.splice(2, 0, '하하');
+        document.write(arr + '<br>');
+
+        //객체 안에 객체와 펑션객체를 넣기
+        // var object1 = {
+        //     'object2': { 'A': 100, 'B': 50, 'C': 'hi' },
+        //     'object3': function () {
+        //         for (var name in object2) {
+        //             document.write('+this.object2[i]+');
+        //         }
+        //     }
+        // };
+        // object1.object3();
+
+        var grades = {
+            list: {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+            show : function(){
+                for (var name in this.list) {  // this는 이 this가 있는 함수가 속해 있는 객체를 가리킨다.
+                    document.write(this.list[name]+'<br>');
+                }
+            }
+        };
+        grades.show();
+        var grade = new grades();
+        grade.show();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
