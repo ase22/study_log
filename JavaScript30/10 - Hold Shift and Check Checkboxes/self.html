@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: orange;
+        }
+
+        .checkbox {
+            margin: 30px auto;
+            max-width: 400px;
+            background-color: white;
+        }
+        .check {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid bisque;
+            
+        }
+        input {
+            margin: 20px;
+        }
+        input:checked + p {
+            text-decoration: line-through;
+        }
+        p {
+            font-weight: 300;
+            margin: 0;
+            padding: 20px;
+            border-left: 1px solid bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="checkbox">
+        <div class="check">
+            <input type="checkbox" id = "0">
+            <p>This is an inbox layout.</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "1">
+            <p>Check one item</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "2">
+            <p>Hold down your Shift key</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "3">
+            <p>Check a lower item</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "4">
+            <p>Everything in between should also be set to checked</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "5">
+            <p>Try to do it without any libraries</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "6">
+            <p>Just regular JavaScript</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "7">
+            <p>Gook Luck!</p>
+        </div>
+        <div class="check">
+            <input type="checkbox" id = "8">
+            <p>Don't forget to tweet your result!</p>
+        </div>
+    </div>
+
+    <script>
+        let isHoldingShift = true;
+        const inputs = Array.from(document.querySelectorAll('input'));
+
+        function shifting(e) {
+            console.log(e);
+            console.log(isHoldingShift);
+
+            if(!isHoldingShift) {
+                return ;
+            }
+            inputs.forEach(input=>{
+            input.addEventListener('click',doChecking);
+        });
+        }
+
+        function doChecking(e) {
+            if (!isHoldingShift) {
+                return;
+            }
+            
+            let a = Array.from(inputs.filter(input => input.checked === true));
+            console.log(a);
+                let index = a.findIndex(element=>element.id === e.target.id);
+                console.log(index);
+        
+                if (a.length === 1) {
+                    return;
+                }
+
+                // 밑에서부터 선택될 때
+                if (index === 0) {
+
+                    for (let i = a[index].id;i<a[index+1].id;i++) {
+                    const input = document.getElementById(`${i}`);
+                    input.checked = true;
+                    }
+                    return;
+                }
+
+                // 위에서부터 선택될 때
+                for (let i = a[index-1].id;i<a[index].id;i++) {
+                    console.log(i);
+                    const input = document.getElementById(`${i}`);
+                    input.checked = true;
+                }
+        }
+
+
+
+        window.addEventListener('keydown',(e) => {
+            if (e.key === 'Shift') {
+                isHoldingShift = true;
+                shifting(e);
+            }
+        });
+        window.addEventListener('keyup',()=>{
+            console.log('hi');
+            isHoldingShift = false;
+            console.log(isHoldingShift);
+        });
+
+        
+
+
+    </script>
+</body>
+</html>
