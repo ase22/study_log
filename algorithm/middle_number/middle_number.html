@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(s) {
+            var a = s.length;
+            var i = 0;
+            var mid;
+
+            while (a>=1) {
+                if (a == 1) {
+                    mid = s[i];
+                    break;
+                }
+                if (a == 2) {
+                    mid = s[i]+s[i+1];
+                    break;
+                }
+                i++
+                a = a-2;
+            }
+            var answer = mid;
+            return answer;
+        }
+    </script>
+</body>
+</html>
