@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Global Scope Sample</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <script>
+      var a = '바닐라코딩';
+
+      console.log(`우리는 ${a}입니다.`);
+
+      setTimeout(function () {
+        console.log(`[1초 후] 우리는 ${a}입니다.`);
+      }, 1000);
+    </script>
+    <script>
+      var a = '느린캠퍼스';
+
+      console.log(`우리는 ${a}입니다.`);
+    </script>
+  </body>
+</html>
